@@ -53,6 +53,8 @@ int main()
 	
     getchar(); // Wait for user input
 
+    std::cout << "C++ process re-read: " << *shared_long << std::endl;
+
     UnmapViewOfFile(shared_long);
     CloseHandle(hMapFile);
     CloseHandle(hFile);
